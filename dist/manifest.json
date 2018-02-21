@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "JIRA Extension",
+    "description": "JIRA Extension's",
+    "homepage_url": "https://github.com/christianjames/jira-extensions",
+    "version": "0.0.1",
+    "author": "Christian James Lourenço",    
+    "icons": {
+      "16" : "images/icon-16.png",
+      "48" : "images/icon-48.png",
+      "128": "images/icon-128.png"
+    },
+    "content_scripts": [{
+      "js": ["scripts/main.js"],
+      "matches": [
+        "http://jira.hbsis.com.br/*",
+        "https://jira.hbsis.com.br/*"
+      ]
+    }]
+  }
